@@ -6,7 +6,10 @@
 package ec.edu.ups.clases;
 
 /**
- *
+ * @since 2019
+ * @version 2.1 
+ * Clase "padre" que hereda a las clases Empleado y Cliente, ademas determina
+ * las acciones de una persona
  * @author jonnathan
  */
 public class Persona {

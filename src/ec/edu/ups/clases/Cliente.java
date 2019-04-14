@@ -6,7 +6,9 @@
 package ec.edu.ups.clases;
 
 /**
- *
+ * Clase "padre" que hereda a las clases ClienteMayorista y ClienteMinorista, y a su
+ * vez hereda los atributos de la clase Persona, ademas determina las acciones
+ * de un cliente en general
  * @author jonnathan
  */
 public class Cliente {

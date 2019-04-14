@@ -6,7 +6,10 @@
 package ec.edu.ups.clases;
 
 /**
- *
+ * @since 2019
+ * @version 2.1
+ * Clase que hereda los atributos de la clase Cliente, ademas determina las
+ * acciones de un cliente Minorista
  * @author jonnathan
  */
 public class Minorista {

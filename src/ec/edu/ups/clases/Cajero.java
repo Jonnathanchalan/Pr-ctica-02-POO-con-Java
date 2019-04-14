@@ -6,7 +6,10 @@
 package ec.edu.ups.clases;
 
 /**
- *
+ * @version 2.1
+ * @since 2019
+ * Clase que hereda los atributos de la clase Empleado, ademas determina las
+ * acciones de un cajero
  * @author jonnathan
  */
 public class Cajero {

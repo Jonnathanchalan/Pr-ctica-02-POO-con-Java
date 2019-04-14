@@ -8,7 +8,10 @@ package ec.edu.ups.clases;
 import java.util.Date;
 
 /**
- *
+ * @version 2.1
+ * @since 2019
+ * Clase "padre" que hereda a las clases Empleado y Cliente, y a su vez hereda los
+ * atributos de la clase Persona, ademas determina las acciones de un Cajero
  * @author jonnathan
  */
 

@@ -6,7 +6,8 @@
 package ec.edu.ups.clases;
 
 /**
- *
+ *  Clase que hereda los atributos de la clase Empleado, ademas determina las
+ * acciones de un despachador
  * @author jonnathan
  */
 public class Despachador {
