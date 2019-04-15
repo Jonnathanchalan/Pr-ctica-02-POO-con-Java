@@ -6,10 +6,70 @@
 package ec.edu.ups.clases;
 
 /**
- *  Clase que hereda los atributos de la clase Empleado, ademas determina las
+ *  Clase "Hija" que hereda los atributos de la clase Empleado, ademas determina las
  * acciones de un despachador
  * @author jonnathan
  */
 public class Despachador {
+    
+    private String revisarFactura;
+    private int revisarProductos ;
+    private String alistarProductos;
+    private String entregarProcuctos;
+
+    public Despachador() {
+    }
+
+    public Despachador(String revisarFactura, int revisarProductos) {
+        this.revisarFactura = revisarFactura;
+        this.revisarProductos = revisarProductos;
+    }
+
+    public Despachador(String revisarFactura, int revisarProductos, String alistarProductos, String entregarProcuctos) {
+        this.revisarFactura = revisarFactura;
+        this.revisarProductos = revisarProductos;
+        this.alistarProductos = alistarProductos;
+        this.entregarProcuctos = entregarProcuctos;
+    }
+
+    public String getRevisarFactura() {
+        return revisarFactura;
+    }
+
+    public void setRevisarFactura(String revisarFactura) {
+        this.revisarFactura = revisarFactura;
+    }
+
+    public int getRevisarProductos() {
+        return revisarProductos;
+    }
+
+    public void setRevisarProductos(int revisarProductos) {
+        this.revisarProductos = revisarProductos;
+    }
+
+    public String getAlistarProductos() {
+        return alistarProductos;
+    }
+
+    public void setAlistarProductos(String alistarProductos) {
+        this.alistarProductos = alistarProductos;
+    }
+
+    public String getEntregarProcuctos() {
+        return entregarProcuctos;
+    }
+
+    public void setEntregarProcuctos(String entregarProcuctos) {
+        this.entregarProcuctos = entregarProcuctos;
+    }
+
+    @Override
+    public String toString() {
+        return "Despachador{" + "revisarFactura=" + revisarFactura + ""
+                + ", revisarProductos=" + revisarProductos + ", alistarProductos="
+                + alistarProductos + ", entregarProcuctos=" + entregarProcuctos + '}';
+    }
+    
     
 }

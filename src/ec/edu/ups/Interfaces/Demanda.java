@@ -10,5 +10,15 @@ package ec.edu.ups.Interfaces;
  * @author jonnathan
  */
 public interface Demanda {
+
+    public abstract String importar();
+        
+     public abstract String exportar();
+     
+     
+
+   
+ 
+    }
     
-}
+   

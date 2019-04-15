@@ -5,7 +5,7 @@
  */
 package ec.edu.ups.clases;
 
-import java.util.Date;
+
 
 /**
  * @version 2.1
@@ -16,83 +16,80 @@ import java.util.Date;
  */
 
     
-    public abstract class Empleado {
+    public abstract class Empleado extends Persona {
 
-   
-   
-    private int codigo;
-    private String cedula;
-    private String nombre;
-    private Date fechaContratacion;
+    
+    private String cargo;
+    private String departamento;
     private double salario;
-    private String email;
+    
 
     public Empleado() {
     }
-
-    public Empleado(int codigo, String cedula, String nombre, Date fechaContratacion, double salario) {
-        this.codigo = codigo;
-        this.cedula = cedula;
-        this.nombre = nombre;
-        this.fechaContratacion = fechaContratacion;
+    
+    
+     public Empleado(String cargo, String departamento, double salario) {
+        this.cargo = cargo;
+        this.departamento = departamento;
         this.salario = salario;
-        this.email= email;
     }
 
-    public int getCodigo() {
-        return codigo;
+    public Empleado(String cargo, String departamento, double salario, int codigo, String cedula) {
+        super(codigo, cedula);
+        this.cargo = cargo;
+        this.departamento = departamento;
+        this.salario = salario;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    
+    
+     public String cargo() {
+        return cargo;
     }
 
-    public String getCedula() {
-        return cedula;
+    public void setcargo(String cargo) {
+        this.cargo = cargo;
     }
 
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
+    public void departamento(String departamento) {
+        this.departamento = departamento;
     }
 
-    public String getNombre() {
-        return nombre;
+    public void setdepartamento(String departamento) {
+        this.departamento = departamento;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public Date getFechaContratacion() {
-        return fechaContratacion;
-    }
-
-    public void setFechaContratacion(Date fechaContratacion) {
-        this.fechaContratacion = fechaContratacion;
-    }
-
-    public double getSalario() {
+    public double salario(double salario) {
         return salario;
     }
 
-    public void setSalario(double salario) {
+    public void setsalario(double salario) {
         this.salario = salario;
     }
-     public String getEmail() {
-        return email;
-    }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public abstract double calcularSalarioFinal();
-    
-    
     @Override
     public String toString() {
-        return "Empleado{" + "codigo=" + codigo + ", cedula=" + cedula + ", nombre=" + nombre + ", fechaContratacion=" + fechaContratacion + ", salario=" + salario + '}';
+        return "Empleado{" + "cargo=" + cargo + ", departamento=" + departamento + ", salario=" + salario + '}';
     }
+    
+    
+     public String sec() {
+        return "La seccion " + super.getNombre() + "ventas.";
+    }
+
+    public String sec1() {
+        return "La seccion " + super.getNombre() + "operativo.";
+    }
+
+    public String sec2() {
+        return "La seccion " + super.getNombre() + "administracion";
+    }
+     
+      
+    
+
+    
+
 }
     
 
